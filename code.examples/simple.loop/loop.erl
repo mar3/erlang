@@ -23,8 +23,11 @@ do_loop(CurrentPos, Until) ->
 % (ただし、Erlang でそのように呼ぶのかどうか不明。)
 %
 main( _ ) ->
+
 	io:format("### start ###\n"),
+
 	do_loop(0, 9),
+
 	io:format("--- end ---\n").
 
 

@@ -1,6 +1,6 @@
 % coding: utf-8
 %
-% Erlan のモジュールのサンプル
+% Erlang のモジュールのサンプル
 %
 
 -module(hello).

@@ -19,14 +19,14 @@ print_line(Handle) ->
 			print_line(Handle)
 	end.
 
-main(File) ->
+main(Path) ->
 
 	try
 
 		%
 		% ファイルを開く
 		%
-		{ok, Handle} = file:open(File, read),
+		{ok, Handle} = file:open(Path, read),
 
 		%
 		% 読み出し。ファイルの終端まで繰り返す。

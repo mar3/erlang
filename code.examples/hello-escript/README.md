@@ -1,2 +1,2 @@
-chmod +x before run
+chmod +x before you run.
 

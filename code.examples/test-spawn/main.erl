@@ -14,7 +14,12 @@ log(Args) ->
 exec_process() ->
 
 	erlang:spawn(
+
 		fun() ->
+
+			%
+			% 子プロセスの処理
+			%
 			log("<child> $$$ start $$$"),
 			timer:sleep(500),
 			log("<child> processing..."),
@@ -29,15 +34,23 @@ exec_process() ->
 			timer:sleep(500),
 			log("<child> processing..."),
 			log("<child> $$$ end $$$")
+
 		end),
+
 	done.
 
 main(_) ->
 
 	log("<root> ### start ###"),
 
+	%
+	% 子プロセスの呼び出し
+	%
 	exec_process(),
 
+	%
+	% 親プロセスの処理
+	%
 	timer:sleep(1000),
 	log("<root> waiting..."),
 	timer:sleep(1000),
@@ -51,4 +64,5 @@ main(_) ->
 	timer:sleep(1000),
 
 	log("<root> --- end ---"),
+
 	done.

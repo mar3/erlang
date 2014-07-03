@@ -4,6 +4,7 @@
 % -module(main).
 
 log(Args) ->
+
 	Now = erlang:now(),
 	{{Year, Month, Day}, {Hour, Min, Sec}} = calendar:now_to_local_time(Now),
 	{_, _, Micros} = Now,
@@ -11,16 +12,43 @@ log(Args) ->
 		[Year, Month, Day, Hour, Min, Sec, Micros, Args]).
 
 exec_process() ->
+
 	erlang:spawn(
 		fun() ->
-			log('$$$ start $$$ '),
-			log('$$$ end $$$')
+			log('<child> $$$ start $$$ '),
+			timer:sleep(500),
+			log("<child> processing..."),
+			timer:sleep(500),
+			log("<child> processing..."),
+			timer:sleep(500),
+			log("<child> processing..."),
+			timer:sleep(500),
+			log("<child> processing..."),
+			timer:sleep(500),
+			log("<child> processing..."),
+			timer:sleep(500),
+			log("<child> processing..."),
+			log('<child> $$$ end $$$')
 		end),
 	done.
 
 main(_) ->
-	log("### start ###"),
+
+	log("<root> ### start ###"),
+
 	exec_process(),
+
 	timer:sleep(1000),
-	log("--- end ---"),
+	log("<root> waiting..."),
+	timer:sleep(1000),
+	log("<root> waiting..."),
+	timer:sleep(1000),
+	log("<root> waiting..."),
+	timer:sleep(1000),
+	log("<root> waiting..."),
+	timer:sleep(1000),
+	log("<root> waiting..."),
+	timer:sleep(1000),
+
+	log("<root> --- end ---"),
 	done.

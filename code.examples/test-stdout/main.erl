@@ -1,7 +1,7 @@
 #!/usr/local/bin/escript
 % coding: utf8
 
--module(main).
+% -module(main).
 
 log(Args) ->
 	Now = erlang:now(),

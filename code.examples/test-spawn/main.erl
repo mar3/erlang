@@ -15,7 +15,7 @@ exec_process() ->
 
 	erlang:spawn(
 		fun() ->
-			log('<child> $$$ start $$$ '),
+			log("<child> $$$ start $$$"),
 			timer:sleep(500),
 			log("<child> processing..."),
 			timer:sleep(500),
@@ -28,7 +28,7 @@ exec_process() ->
 			log("<child> processing..."),
 			timer:sleep(500),
 			log("<child> processing..."),
-			log('<child> $$$ end $$$')
+			log("<child> $$$ end $$$")
 		end),
 	done.
 

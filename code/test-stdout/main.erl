@@ -1,4 +1,4 @@
-#!/usr/local/bin/escript
+#!/usr/bin/env escript
 % coding: utf8
 
 % -module(main).

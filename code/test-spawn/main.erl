@@ -1,4 +1,4 @@
-#!/usr/local/bin/escript
+#!/usr/bin/env escript
 % coding: utf8
 
 % -module(main).
@@ -46,6 +46,10 @@ main(_) ->
 	%
 	% 子プロセスの呼び出し
 	%
+	exec_process(),
+	exec_process(),
+	exec_process(),
+	exec_process(),
 	exec_process(),
 
 	%

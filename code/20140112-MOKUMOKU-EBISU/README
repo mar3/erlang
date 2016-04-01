@@ -1,0 +1,12 @@
+2014-01-12
+
+	Erlang もくもく会 1st at Engine Yard(恵比寿)
+
+・hello.erl を作成
+	→ カレントディレクトリに移動して erl
+	→ Erlang のシェル内で c(hello) するとカレントディレクトリでコンパイルされる
+	→ hello:module_info() でモジュール情報のダンプ
+	→ hello:public_operation() で即時呼び出し実行(カレントディレクトリにある beam を自動的に参照してくれるように見える)
+
+・erl は ctrl+4 で終了することを見つけた
+

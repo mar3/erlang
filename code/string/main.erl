@@ -10,5 +10,7 @@ main(_) ->
 
 	io:format("~p~n", [lists:append("abc", "def")]),
 
+	io:format("~p~n", [lists:concat(["/tmp", "/a", "/b", 500])]),
+
 	done.
 

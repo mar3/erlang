@@ -1,8 +1,6 @@
 #!/usr/bin/env escript
 % coding: utf8
 
-% -module(main).
-
 log(Args) ->
 	Now = erlang:now(),
 	{{Year, Month, Day}, {Hour, Min, Sec}} = calendar:now_to_local_time(Now),
@@ -11,7 +9,6 @@ log(Args) ->
 			   [Year, Month, Day, Hour, Min, Sec, Micros, Args]).
 
 main(_) ->
-
 	log("### start ###"),
 	log(["ログテスト", "ABC"]),
 	log("ログテストその2"),

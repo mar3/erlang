@@ -6,6 +6,8 @@
 invoke(Operation, Vaule) ->
 
 	%%
+	%% “高階関数”の例です。
+	%%
 	%% 第一引数 Operation が関数であるとみなして Operation() を呼び出してみます。
 	%% 引数は Value です。
 	%%

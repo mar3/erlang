@@ -1,13 +1,13 @@
-##R16B03 をソースからインストールする
+## R16B03 をソースからインストールする
 
 作成: 2014-06-12
 
-####環境
+#### 環境
 - CentOS 6.5
 - Erlang/OTP 16B03
 
 
-####手順
+#### 手順
 
 Erlang のウェブサイト(http://www.erlang.org/)に Download Erlang/OTP とあるのでそれをクリック。R16B03 を選択。「R16B03 Source File」とあるのでこれをクリックしてダウンロード。
 
@@ -64,7 +64,7 @@ Erlang のウェブサイト(http://www.erlang.org/)に Download Erlang/OTP と�
     yum install iftop
     yum install tcpdump
 
-####マニュアル
+#### マニュアル
 
 まず man。
 
@@ -96,7 +96,7 @@ man を打つとマニュアルが見えると思う。
 
 
 
-##Erlang/OTP 17.0 を yum でインストールする
+## Erlang/OTP 17.0 を yum でインストールする
 
 作成: 2014-06-12
 

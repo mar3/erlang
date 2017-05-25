@@ -1,9 +1,6 @@
-#!/usr/local/bin/escript
+#!/usr/bin/env escript
 % coding: utf-8
-%
-%
 % 2014-04-29 Erlang を用いた並列プログラミングのサンプル
-%
 
 -module(spawn_test2).
 -export([say_something/2]).

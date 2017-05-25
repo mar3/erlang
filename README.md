@@ -1,4 +1,4 @@
-# installation (Debian)
+# installation (Debian/Ubuntu)
 
 ```
 $ sudo apt-get install erlang

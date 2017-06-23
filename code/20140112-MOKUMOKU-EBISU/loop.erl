@@ -1,4 +1,4 @@
-#!/usr/local/bin/escript
+#!/usr/bin/env escript
 % coding: utf-8
 
 do_loop(CurrentPos, Until) ->

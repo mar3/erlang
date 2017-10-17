@@ -8,3 +8,10 @@ $ sudo apt-get install erlang
 
 yum 一発では入らない。ソースからインストールしなければならない。難易度高い。
 
+# installation (Amazon Linux)
+
+簡単に入る
+
+```
+# yum install erlang
+```

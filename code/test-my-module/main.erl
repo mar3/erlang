@@ -1,4 +1,4 @@
-#!/usr/local/bin/escript
+#!/usr/bin/env escript
 %% -*- erlang -*-
 
 -import(logger, [hello/0]).

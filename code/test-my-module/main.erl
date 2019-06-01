@@ -1,13 +1,19 @@
 #!/usr/bin/env escript
 %% -*- erlang -*-
 
--import(logger, [hello/0]).
--import(logger, [info/1]).
+% mylogger を mylogger.beam にコンパイルしておく必要がある。まえからそうだったっけ？？
+
+-import(mylogger, [hello/0]).
+% -import(mylogger, [info/1]).
 
 main(_) ->
-	% io:put_chars("Hello Erlang.\x0a"),
-	logger:info(["Hello Erlang World"]),
-	{ok}.
+	io:format("### begin ###\n"),
+	io:format(<<"[TRACE] 自分のモジュールを呼び出しています...\n"/utf8>>),
+	mylogger:hello(),
+	% mylogger:info(["Hello Erlang World"]),
+	{ok},
+	io:format("---end ---\n"),
+	done.
 
 
 
